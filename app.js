@@ -2,6 +2,7 @@
 var http = require('http');
 
 setInterval(function() {
+  console.log('YOOOO')
   console.log(process.env.args)
   console.log(process.env.NODE_ENV)
 }, 1000)

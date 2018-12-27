@@ -21,7 +21,7 @@ module.exports = {
     production : {
       user : 'lab',
       host : '192.168.1.155',
-      ref  : 'origin/master',
+      ref  : 'origin/development',
       repo : 'https://github.com/Unitech/test-repo.git',
       path : '/var/www/production2',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'

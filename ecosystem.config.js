@@ -25,6 +25,14 @@ module.exports = {
       repo : 'https://github.com/Unitech/test-repo.git',
       path : '/var/www/production',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
+    },
+    development : {
+      user : 'lab',
+      host : '192.168.1.155',
+      ref  : 'origin/master',
+      repo : 'https://github.com/Unitech/test-repo.git',
+      path : '/var/www/development',
+      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env development'
     }
   }
 };

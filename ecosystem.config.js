@@ -4,7 +4,7 @@ module.exports = {
     script: 'app.js',
 
     // Options reference: https://pm2.io/doc/en/runtime/reference/ecosystem-file/
-    args: 'one two',
+    args: 'one two three',
     instances: 1,
     autorestart: true,
     watch: false,

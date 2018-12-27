@@ -19,10 +19,10 @@ module.exports = {
 
   deploy : {
     production : {
-      user : 'envision',
-      host : '192.168.1.102',
+      user : 'lab',
+      host : '192.168.1.155',
       ref  : 'origin/master',
-      repo : 'git@github.com:repo.git',
+      repo : 'https://github.com/Unitech/test-repo.git',
       path : '/var/www/production',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
     }

@@ -1,6 +1,10 @@
 
 var http = require('http');
 
+setInterval(function() {
+  console.log(process.env.args)
+}, 1000)
+
 var server = http.createServer(function(req, res) {
   res.writeHead(200);
   res.end('hey');

@@ -23,7 +23,7 @@ module.exports = {
       host : '192.168.1.155',
       ref  : 'origin/master',
       repo : 'https://github.com/Unitech/test-repo.git',
-      path : '/var/www/production',
+      path : '/var/www/production2',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
     },
     development : {
@@ -31,7 +31,7 @@ module.exports = {
       host : '192.168.1.155',
       ref  : 'origin/master',
       repo : 'https://github.com/Unitech/test-repo.git',
-      path : '/var/www/development',
+      path : '/var/www/development2',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env development'
     }
   }
